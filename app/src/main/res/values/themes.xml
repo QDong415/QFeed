@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- PrimaryColor 主题颜色。app的主要颜色，即整个屏幕和所有控件的主要颜色，首选颜色。 -->
+        <item name="colorPrimary">@color/red_color</item>
+        <!-- status bar（状态栏）背景色-->
+        <item name="colorPrimaryDark">@color/white</item>
+
+        <!-- materialButtonStyle是整个app的button样式，如果不写下面这句，表示走系统默认的button样式，button会比较大但是复合meterial风格，有阴影。建议是走系统的。不想要系统样式的用TextView-->
+        <item name="materialButtonStyle">@style/App.Button</item>
+
+    </style>
+
+    <!-- ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="actionMenuTextColor">@color/toolbar_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="App.Button" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:minHeight">0dip</item>
+        <item name="android:minWidth">0dip</item>
+    </style>
+
+    <style name="Splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <!--        <item name="android:windowFullscreen">true</item>-->
+        <!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+    </style>
+</resources>

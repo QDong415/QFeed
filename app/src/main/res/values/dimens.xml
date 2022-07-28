@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbar_height">45dp</dimen>
+    <dimen name="bottom_bar_height">56dp</dimen>
+
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="comment_tiny_cell_padding">2dp</dimen>
+
+    <!-- topic_element_topmargin == topic_griditem_topmargin + topic_gridlayout_topmargin -->
+    <!-- topic_title_leftmargin == topic_gridlayout_leftmargin + topic_griditem_leftmargin -->
+    <dimen name="topic_element_topmargin">7dp</dimen>
+    <dimen name="topic_title_leftmargin">12dp</dimen>
+
+    <dimen name="topic_gridlayout_topmargin">5dp</dimen>
+    <dimen name="topic_gridlayout_leftmargin">10dp</dimen>
+    <dimen name="topic_gridlayout_rightmargin">10dp</dimen>
+    <dimen name="topic_griditem_leftmargin">2dp</dimen>
+    <dimen name="topic_griditem_topmargin">2dp</dimen>
+
+    <dimen name="topic_griditem_maxwidth">210.0dip</dimen>
+    <dimen name="topic_griditem_minwidth">16.0dip</dimen>
+    <dimen name="topic_emoji_size">15sp</dimen>
+</resources>

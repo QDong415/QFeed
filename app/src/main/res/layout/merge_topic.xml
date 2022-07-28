@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/avatar_iv"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginLeft="@dimen/topic_title_leftmargin"
+            app:shapeAppearance="@style/CircleStyle"
+            android:src="@drawable/user_photo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试的"
+                android:textColor="@color/text_black_deep_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subhead_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/text_gray_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/more_iv"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/arrow_down_gray"/>
+    </LinearLayout>
+
+    <com.dq.feed.view.linktextview.QMUILinkTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/link_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topic_title_leftmargin"
+        android:layout_marginRight="@dimen/topic_title_leftmargin"
+        android:layout_marginTop="@dimen/topic_element_topmargin"
+        android:lineSpacingExtra="2dp"
+        app:qmui_linkBackgroundColor="@color/link_tv_background_color"
+        app:qmui_linkTextColor="#3399ff"
+        android:textColor="@color/text_black_deep_color"
+        android:text="内容"
+        android:textSize="17sp" />
+
+    <com.dq.feed.view.PictureGridLayout
+        android:id="@+id/picture_gridlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topic_gridlayout_topmargin"
+        android:layout_marginLeft="@dimen/topic_gridlayout_leftmargin" />
+
+</merge>

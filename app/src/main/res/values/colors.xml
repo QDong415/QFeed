@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="name_color">#133465</color>
+    <color name="text_gray_color">#919191</color>
+    <color name="text_black_deep_color">#333333</color>
+    <color name="text_black_color">#5B5B5B</color>
+    <drawable name="gray_rect">#F0F0F0</drawable>
+    <drawable name="gray_rect_press">#D9D9D9</drawable>
+    <drawable name="white_drawable">#FFF</drawable>
+    <drawable name="white_press_drawable">#F2F2F2</drawable>
+    <color name="toolbar_color">#F6F6F6</color>
+    <color name="sky_color">#2EA7EE</color>
+
+    <color name="divider_color">#E3E3E3</color>
+    <color name="background_color">#F3F3F3</color>
+
+    <color name="red_color">#FE6766</color>
+    <color name="red_press_color">#E64C64</color>
+    <color name="gray_color">#EEEEEE</color>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/toolbar_color"
+    android:minHeight="@dimen/toolbar_height"
+    android:text="标题"
+    android:elevation="4dp"
+    app:navigationIcon="@drawable/ic_white_black_24dp"
+    app:layout_collapseMode="pin"
+    app:titleTextAppearance="@style/ToolTitleStyle"
+    app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+
+    <TextView
+        android:id="@+id/toolbar_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="右侧按钮"
+        android:textColor="@color/text_black_color"
+        android:textSize="15sp" />
+
+</androidx.appcompat.widget.Toolbar>
+    <!--    android:theme="@style/ToolbarTheme"-->
