@@ -19,13 +19,13 @@
 - 手指往下滚动，滚动过程中，帧率在`57帧 - 60帧`徘徊
 - 退出Activity再次进入，由于java底层的代码优化，执行效率会上升。首次setAdpater帧率为`53帧`左右
 <br/>
-![1659104674017.jpg](https://upload-images.jianshu.io/upload_images/26002059-ac0b00bb6d4f6f88.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/h/720)
+![165910467401.jpg](https://upload-images.jianshu.io/upload_images/26002059-60631e2c5368e1e9.png)
 
 ## 我优化后的效果：
 - 首次进入Activity后触发下拉刷新，请求成功后setAdpater，这时候帧率会掉到`57帧`左右。丢失3帧左右
 - 手指往下滚动，滚动过程中，全程60帧
 <br/>
-![1659104746498.jpg](https://upload-images.jianshu.io/upload_images/26002059-0ccf5a12966cf289.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/h/720)
+![165910474648.jpg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/df6c5668068d4ef6a29ebc90e18f4c58~tplv-k3u1fbpfcp-watermark.image)
 
 
 ## 我的基础优化方案（别人帖子也会讲的）：
