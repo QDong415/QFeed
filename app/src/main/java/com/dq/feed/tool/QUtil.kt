@@ -8,7 +8,7 @@ const val NET_ERROR_CODE = -1
 const val NET_ERROR = "Emm...服务器出问题了"
 
 //服务端根路径
-const val BASE_URL: String = "https://api.itopic.com.cn/api/"
+const val BASE_URL: String = "http://47.104.91.32/api/"
 
 //图片路径
 const val QINIU_URL = "https://qiniu.itopic.com.cn/"

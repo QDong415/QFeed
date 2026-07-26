@@ -27,7 +27,7 @@ class WelcomeActivity : AppCompatActivity() ,INavBar {
 
         val start = System.currentTimeMillis()
         //Glide首次加载需要开启线程池，耗时50ms。我们放在这里就加载好。这样真实是用glide的时候就免去50ms
-        Glide.with(this@WelcomeActivity)
+//        Glide.with(this@WelcomeActivity)
         Log.e("dq", "Glide first load = " + (System.currentTimeMillis() - start))
 
         //1.3秒后跳转到主页 或者 登录页，看具体需求
