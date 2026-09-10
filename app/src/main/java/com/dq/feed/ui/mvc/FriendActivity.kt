@@ -3,6 +3,7 @@ package com.dq.feed.ui.mvc
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,7 +26,7 @@ import com.scwang.smart.refresh.layout.SmartRefreshLayout
 import com.scwang.smart.refresh.layout.api.RefreshLayout
 import kotlinx.coroutines.*
 
-class FriendActivity : AppCompatActivity(), INavBar, OnSpanTextClickListener {
+class FriendActivity : AppCompatActivity(), INavBar, OnSpanTextClickListener, TopicItemActionListener {
 
     private val title: String by lazy { intent.getStringExtra("title")!! }
 
@@ -73,6 +74,7 @@ class FriendActivity : AppCompatActivity(), INavBar, OnSpanTextClickListener {
 
         //RecyclerView创建适配器，并且设置
         mAdapter = FriendRecyclerAdapter(this, list, this)
+        mAdapter.setOnTopicItemActionListener(this)
         recyclerView.adapter = mAdapter
     }
 
@@ -224,4 +226,18 @@ class FriendActivity : AppCompatActivity(), INavBar, OnSpanTextClickListener {
     override fun onUserSpanTextClick(userId: String?, name: String?, avatar: String?) {
         Toast.makeText(this, name , Toast.LENGTH_SHORT).show()
     }
+
+    override fun onGridPictureClick(imageView: ImageView, gridLayoutIndex: Int, imageIndex: Int) {
+        Toast.makeText(this, "点击了图片", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onAvatarClick(view: View) {}
+
+    override fun onLikeClick(view: View) {}
+
+    override fun onCommentClick(view: View) {}
+
+    override fun onShareClick(view: View) {}
+
+    override fun onMoreClick(view: View) {}
 }

@@ -193,6 +193,9 @@ public class PictureGridLayout extends GridLayout implements View.OnClickListene
 
 	@Override
 	public void onClick(View v) {
+		if (onPictureItemClickListener == null) {
+			return;
+		}
 		onPictureItemClickListener.onGridPictureClick((ImageView)v, (int)getTag(), (int)v.getTag());
 	}
 }

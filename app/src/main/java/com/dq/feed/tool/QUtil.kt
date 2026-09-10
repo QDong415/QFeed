@@ -11,7 +11,7 @@ const val NET_ERROR = "Emm...服务器出问题了"
 const val BASE_URL: String = "http://47.104.91.32/api/"
 
 //图片路径
-const val QINIU_URL = "https://qiniu.itopic.com.cn/"
+const val QINIU_URL = "http://qiniu.itopic.com.cn/"
 
 
 /**

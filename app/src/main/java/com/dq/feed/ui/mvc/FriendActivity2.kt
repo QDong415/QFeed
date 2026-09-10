@@ -348,7 +348,7 @@ class FriendActivity2 : AppCompatActivity(), INavBar, OnSpanTextClickListener,
     }
 
     override fun onGridPictureClick(imageView: ImageView, gridLayoutIndex: Int, imageIndex: Int) {
-        Log.e("dq","gridLayoutIndex = "+gridLayoutIndex +"   imageIndex "+imageIndex)
+        Toast.makeText(this, "点击了图片", Toast.LENGTH_SHORT).show()
     }
 
     override fun onAvatarClick(view: View) {
